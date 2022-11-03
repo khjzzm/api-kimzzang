@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: "local"
+
+server:
+  port: 463
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+logging:
+  config: classpath:log/logback-real.xml
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  configuration:
+    default-fetch-size: '100'
+    default-statement-timeout: '30'
+    map-underscore-to-camel-case: 'true'
+
+management:
+  endpoint:
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: prometheus

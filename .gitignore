@@ -1,0 +1,14 @@
+.gradle
+.idea
+.settings
+.vscode
+build
+bin
+out
+.classpath
+.project
+.coveralls.yml
+.DS_Store
+application-local.yml
+application-local2.yml
+src/main/generated/
