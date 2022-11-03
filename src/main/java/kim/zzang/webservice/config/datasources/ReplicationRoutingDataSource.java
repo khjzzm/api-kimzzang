@@ -8,7 +8,7 @@ import org.springframework.transaction.support.TransactionSynchronizationManager
 
 @Slf4j
 @RequiredArgsConstructor
-//@ExcludeScan
+@ExcludeScan
 public class ReplicationRoutingDataSource extends AbstractRoutingDataSource {
 
     private final DataSourceKey dataSourceKey;

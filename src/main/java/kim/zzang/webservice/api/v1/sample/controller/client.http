@@ -8,19 +8,19 @@ Content-Type: application/json
 }
 
 ### 최초 실행 10초 그 이후 캐시 적용 (5분 동안)
-GET http://localhost:463/sample/caffeine/greet
+GET http://localhost:463/v1//caffeine/greet
 
 ### 1분동안 같은 숫자 캐싱 (id=hyinjin)
-GET http://localhost:463/sample/caffeine/random?id=hyunjin
+GET http://localhost:463/v1/caffeine/random?id=hyunjin
 
 ### id=yeoboya
-GET http://localhost:463/sample/caffeine/random?id=yeoboya
+GET http://localhost:463/v1/caffeine/random?id=yeoboya
 
 ### 특정 아이디에 해당하는 캐시 삭제
-DELETE http://localhost:463/sample/caffeine/cache?id=hyunjin
+DELETE http://localhost:463/v1/caffeine/cache?id=hyunjin
 
 ### 캐시 전부 삭제
-DELETE http://localhost:463/sample/caffeine/all-cache
+DELETE http://localhost:463/v1/caffeine/all-cache
 
 ### 다국어처리 (한국어)
 http://localhost:463/sample/message?lang=ko

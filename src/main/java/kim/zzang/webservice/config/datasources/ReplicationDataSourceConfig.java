@@ -25,7 +25,7 @@ import java.util.Map;
         basePackages = {"kim/zzang/webservice/api/*/*/repository"}
 )
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
-//@ExcludeScan
+@ExcludeScan
 public class ReplicationDataSourceConfig {
     private final DataSourceKey dataSourceKey;
 
