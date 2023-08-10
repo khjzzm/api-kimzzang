@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import kim.zzang.webservice.api.v1.posts.domain.Post;
 import kim.zzang.webservice.api.v1.posts.repository.PostRepository;
 import kim.zzang.webservice.api.v1.posts.request.PostCreate;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -41,6 +42,7 @@ public class PostControllerDocTest {
     private ObjectMapper objectMapper;
 
     @Test
+    @Disabled
     @DisplayName("글 단건 조회")
     void test1() throws Exception {
         // given

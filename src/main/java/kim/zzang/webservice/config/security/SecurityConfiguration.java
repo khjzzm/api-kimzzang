@@ -28,6 +28,8 @@ public class SecurityConfiguration {
 
     private static final String[] PERMIT_URL_ARRAY = {
 
+            "/docs/*",
+
             /* member */
             "/member/sign-up", "/member/login", "/member/reissue", "/member/logout",
 

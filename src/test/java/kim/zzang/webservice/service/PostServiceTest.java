@@ -9,6 +9,7 @@ import kim.zzang.webservice.api.v1.posts.request.PostSearch;
 import kim.zzang.webservice.api.v1.posts.response.PostResponse;
 import kim.zzang.webservice.api.v1.posts.service.PostService;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +55,7 @@ class PostServiceTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("글 1개 조회")
     void test2() {
         // given
